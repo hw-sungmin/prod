@@ -4,7 +4,7 @@
 #셀레니움 설치  pip install selenium
 #webdriver_manager 설치 pip install webdriver_manager
 #크롬 드라이버 오토 인스톨러 설치   pip install chromedriver_autoinstaller
-
+#push  // git push -u orign main
 
 
 
