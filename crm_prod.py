@@ -5,7 +5,9 @@
 #webdriver_manager 설치 pip install webdriver_manager
 #크롬 드라이버 오토 인스톨러 설치   pip install chromedriver_autoinstaller
 
-###########
+
+
+
 ########## 검증 시 변경 필수 ##########
 
 from selenium import webdriver
