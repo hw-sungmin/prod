@@ -1523,9 +1523,9 @@ time.sleep(1)
 
 #출석 동작
 attendance_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(7) > li"
-attendance_PT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(2) > button"
-attendance_GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(3) > button"
-attendance_counselings_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(4) > button"
+attendance_PT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(2)"
+attendance_GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(3)"
+attendance_counselings_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(4)"
 
 
 def attendance_admin():
