@@ -150,7 +150,7 @@ time.sleep(1)
 
 
 #센터 정보 선택 및 수정 동작
-center_informaiton_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(1) > li > span"
+center_informaiton_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(2) > li"
 center_information_notice_kiosk_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.flex-1.flex-col.gap-5.pt-5.px-36.pb-10 > div.h-\[3\.0625rem\].flex.justify-between.items-center > div.flex.gap-2 > button:nth-child(2) > p"
 center_information_notice_app_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.flex-1.flex-col.gap-5.pt-5.px-36.pb-10 > div.h-\[3\.0625rem\].flex.justify-between.items-center > div > button:nth-child(1) > p"
 center_information_center_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5.px-10 > ul > li:nth-child(2) > button"
@@ -266,7 +266,7 @@ time.sleep(1)
 
 
 #회원 관리_회원 등록 동작
-member_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(2) > li > span"
+member_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(3) > li"
 member_information_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.w-full.px-10.flex.justify-between.items-center.pt-5.pb-2\.5 > ul > li:nth-child(1) > button"
 member_info_check_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.flex-1.flex.flex-col.gap-4.px-10.pb-10 > table > tbody > tr:nth-child(1)"
 member_revise_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.flex.flex-col.px-10 > div > div.flex.col-span-2.gap-5.pt-6 > div.flex.flex-col.gap-4 > a > button"
@@ -634,7 +634,7 @@ time.sleep(1)
 
 
 #직원 관리 동작
-employee_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(3) > li"
+employee_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(4) > li"
 employee_add_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > footer > a > button"
 employee_create_name_selector = "#name"
 employee_create_mobile_selector = "#mobileNumber"
@@ -798,7 +798,7 @@ time.sleep(1)
 
 
 #상품 관리 동작
-product_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(4) > li"
+product_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(5) > li"
 product_app_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(2) > button"
 product_deactivate_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(3) > button"
 product_all_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(1) > button"
@@ -1438,7 +1438,7 @@ time.sleep(1)
 
 
 #락커 관리 동작
-locker_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(5) > li"
+locker_selector ="body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(6) > li"
 locker_assingned_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.flex.justify-between.pt-5.px-10.pb-2\.5 > ul > li:nth-child(1) > button"
 locker_unassigned_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.flex.justify-between.pt-5.px-10.pb-2\.5 > ul > li:nth-child(2) > button"
 locker_member_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.flex-1.px-10.flex.flex-col.mb-8 > table > tbody > tr:nth-child(1)"
@@ -1522,10 +1522,10 @@ time.sleep(1)
 
 
 #출석 동작
-attendance_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(7) > li"
-attendance_PT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(2)"
-attendance_GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(3)"
-attendance_counselings_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(4)"
+attendance_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(7) > li"
+attendance_PT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(2) > button"
+attendance_GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(3) > button"
+attendance_counselings_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.pb-\[2\.5rem\].flex-grow.flex.flex-col.gap-5 > div.h-\[3\.125rem\].flex.justify-end.items-center > ul > li:nth-child(4) > button"
 
 
 def attendance_admin():
@@ -1586,7 +1586,7 @@ attendance_admin()
 time.sleep(1)
         
 #스케줄 관리 동작
-schedule_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(8) > li > span"
+schedule_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(8) > li"
 schedule_PT_selector  = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(1) > button"
 schedule_GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(2) > button"
 schedule_OT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(3) > button"
@@ -1693,7 +1693,7 @@ def schedule_admin():
         )
         member_search = driver.find_element(By.CSS_SELECTOR, schedule_add_search_selector)
         member_search.clear()
-        member_search.send_keys("이정환")
+        member_search.send_keys("황성민")
         member_search.send_keys(Keys.RETURN)
         print("회원 검색 완료")
 
@@ -1745,7 +1745,7 @@ time.sleep(1)
 
 
 #OT 신청 관리 동작
-OT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(9) > li"
+OT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(9) > li"
 
 def OT_admin():
     global wait_count # 글로벌 변수 선언
@@ -1770,7 +1770,7 @@ time.sleep(1)
 
 
 #개인 레슨 관리 동작
-PT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(10) > li"
+PT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(10) > li"
 
 def PT_admin():
     global wait_count # 글로벌 변수 선언
@@ -1793,30 +1793,8 @@ def PT_admin():
 PT_admin()
 time.sleep(1)
 
-#계약서 관리
-contract_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(11) > li"
-
-def contract_admin():
-    global wait_count # 글로벌 변수 선언
-    try:
-        #계약서 관리 선택
-        wait_count += 1
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By. CSS_SELECTOR, contract_selector))
-        )
-        contract = driver.find_element(By. CSS_SELECTOR, contract_selector)
-        contract.click()
-        print("계약서 관리 선택 완료")
-
-    except (NoSuchElementException, TimeoutException):
-        print("!!!!! 계약서 관리 관련 오류 발생 !!!!!")
-
-contract_admin()
-time.sleep(1)
-
-
 #그룹 수업 관리 동작
-GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(12) > li"
+GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(11) > li"
 GX_reservation_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(2) > button"
 GX_class_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(1) > button"
 GX_class_all_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(3) > button"
@@ -2131,8 +2109,29 @@ def GX_admin():
 GX_admin()
 time.sleep(1)
 
+#계약서 관리
+contract_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(12) > li"
+
+def contract_admin():
+    global wait_count # 글로벌 변수 선언
+    try:
+        #계약서 관리 선택
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. CSS_SELECTOR, contract_selector))
+        )
+        contract = driver.find_element(By. CSS_SELECTOR, contract_selector)
+        contract.click()
+        print("계약서 관리 선택 완료")
+
+    except (NoSuchElementException, TimeoutException):
+        print("!!!!! 계약서 관리 관련 오류 발생 !!!!!")
+
+contract_admin()
+time.sleep(1)
+
 #상담 관리 동작
-visitor_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(13) > li"
+visitor_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(13) > li"
 
 def visitor_admin():
     global wait_count # 글로벌 변수 선언
@@ -2156,7 +2155,7 @@ visitor_admin()
 time.sleep(1)
 
 #기타 매출 관리 동작
-ect_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(14) > li"
+ect_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(14) > li"
 
 def ect_admin():
     global wait_count # 글로벌 변수 선언
@@ -2179,7 +2178,8 @@ def ect_admin():
 ect_admin()
 time.sleep(1)
 
-statistics_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > a:nth-child(15) > li"
+#통계 관리
+statistics_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(15) > li"
 statistics_sales_selector = "body > div.w-screen.h-\[100svh\].flex.overflow-hidden.bg-\[var\(--netural-gray-scale-white\)\] > div > div > div.px-10.sticky.top-0.flex.flex-col.items-start.pt-5.pb-2.bg-\[--netural-gray-scale-white\].z-10 > ul > button:nth-child(1) > li > h4"
 statistics_payment_selector =  "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > main > div.px-10.sticky.top-0.flex.flex-col.items-start.pt-5.pb-2.bg-\[--netural-gray-scale-white\].z-10 > ul > li:nth-child(2) > button"
 statistics_fc_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > main > div.px-10.sticky.top-0.flex.flex-col.items-start.pt-5.pb-2.bg-\[--netural-gray-scale-white\].z-10 > ul > li:nth-child(3) > button"
