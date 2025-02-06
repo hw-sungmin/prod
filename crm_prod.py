@@ -113,7 +113,7 @@ time.sleep(1)
 
 
 #현재 센터 선택 후 특정 지점 선택
-center_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > div > div > div > div > button"
+center_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > button"
 center_xpath = "//button[text()='APT 강북점']"  ########## 검증 시 변경 항목 (테스트 환경에 맞는 지점명) ###########
 
 #현재 센터 선택 및 지점 변경
