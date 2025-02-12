@@ -1693,7 +1693,7 @@ def schedule_admin():
         )
         member_search = driver.find_element(By.CSS_SELECTOR, schedule_add_search_selector)
         member_search.clear()
-        member_search.send_keys("황성민")
+        member_search.send_keys("이정환")
         member_search.send_keys(Keys.RETURN)
         print("회원 검색 완료")
 
@@ -2110,7 +2110,7 @@ GX_admin()
 time.sleep(1)
 
 #계약서 관리
-contract_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(12) > li"
+contract_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(13) > li"
 
 def contract_admin():
     global wait_count # 글로벌 변수 선언
