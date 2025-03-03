@@ -1587,15 +1587,10 @@ time.sleep(1)
         
 #스케줄 관리 동작
 schedule_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(8) > li"
-schedule_PT_selector  = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(1) > button"
-schedule_GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(2) > button"
-schedule_OT_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(3) > button"
-schedule_counseling_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(4) > button"
-schedule_center_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.flex.flex-col > div.flex.justify-between.items-center.flex-wrap.pb-2\.5 > div.mx-auto.mt-4.xl\:m-0 > ul > li:nth-child(5) > button"
-schedule_add_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.w-full.max-h-\[45\.375rem\] > div > div > div.rbc-time-content > div:nth-child(2) > div.rbc-events-container"
-schedule_add_member_selector = "body > div.flex.justify-center.items-center.fixed.h-\[100svh\].top-0.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div > div > form > div.flex.flex-col.gap-\[1\.875rem\].pt-5 > div:nth-child(2) > div.pt-3.flex.flex-col.gap-3\.5.max-h-\[12\.75rem\].overflow-y-scroll > div > div > label"
-schedule_add_member_product_selector = "body > div.flex.justify-center.items-center.fixed.h-\[100svh\].top-0.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div > div > form > div.flex.flex-col.gap-\[1\.875rem\].pt-5 > div:nth-child(2) > div.pt-3.flex.flex-col.gap-3\.5.max-h-\[12\.75rem\].overflow-y-scroll > div > div.absolute.bottom-0.pb-5.overflow-y-auto.-right-5.translate-x-full.w-\[21rem\].bg-\[var\(--netural-gray-scale-white\)\].shadow-lg.rounded-lg > article > label:nth-child(1) > span.caption-1.text-\[var\(--netural-gray-scale-400\)\].flex-grow.overflow-hidden.text-ellipsis.whitespace-nowrap"
-schedule_add_save_selector = "body > div.flex.justify-center.items-center.fixed.h-\[100svh\].top-0.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div > div > form > div.flex.justify-end.pt-5 > button"
+schedule_add_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div > div.max-h-\[calc\(100vh-12\.5rem\)\].border.border-\[--netural-gray-scale-100\].rounded-2xl.z-0.rbc-calendar > div > div.rbc-time-content > div:nth-child(2) > div.rbc-events-container"
+schedule_add_member_selector = "#create-schedule-form > div.flex.gap-4.px-5.flex-1 > div > div.p-4.flex.flex-col.gap-4.max-h-\[15\.625rem\].overflow-y-auto.border.border-\[--netural-gray-scale-100\].rounded-2xl > div:nth-child(1)"
+schedule_add_member_product_selector = "#create-schedule-form article:first-of-type button"
+schedule_add_save_selector = "body > div.flex.justify-end.fixed.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div.flex-auto.overflow-y-auto > div > button"
 schedule_add_search_selector = "#search-member"
 
 
@@ -1612,67 +1607,7 @@ def schedule_admin():
         print("스케줄 관리 선택 완료")
 
         #스케줄 관리 선택 후 딜레이 2초
-        time.sleep(1)
-
-        #스케줄 관리 _ 그룹 수업 선택
-        wait_count += 1
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By. CSS_SELECTOR, schedule_GX_selector))
-        )
-        schedule_GX = driver.find_element(By. CSS_SELECTOR, schedule_GX_selector)
-        schedule_GX.click()
-        print("그룹 수업 탭 선택 완료")
-
-        #그룹 수업 탭 선택 후 딜레이 2초
-        time.sleep(1)
-
-        #스케줄 관리 _ OT 선택
-        wait_count += 1
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By. CSS_SELECTOR, schedule_OT_selector))
-        )
-        schedule_OT = driver.find_element(By. CSS_SELECTOR, schedule_OT_selector)
-        schedule_OT.click()
-        print("OT 탭 선택 완료")
-
-        #OT 탭 선택 후 딜레이 2초
-        time.sleep(1)
-
-        #스케줄 관리 _ 상담 선택
-        wait_count += 1
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By. CSS_SELECTOR, schedule_counseling_selector))
-        )
-        schedule_counseling = driver.find_element(By. CSS_SELECTOR, schedule_counseling_selector)
-        schedule_counseling.click()
-        print("상담 탭 선택 완료")
-
-        #상담 탭 선택 후 딜레이 2초
-        time.sleep(1)
-
-        #스케줄 관리 _ 센터 업무 선택
-        wait_count += 1
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By. CSS_SELECTOR, schedule_center_selector))
-        )
-        schedule_center = driver.find_element(By. CSS_SELECTOR, schedule_center_selector)
-        schedule_center.click()
-        print("센터 업무 탭 선택 완료")
-
-        #센터 업무 탭 선택 후 딜레이 2초
-        time.sleep(1)
-
-        #스케줄 관리 _ 개인 레슨 선택
-        wait_count += 1
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By. CSS_SELECTOR, schedule_PT_selector))
-        )
-        schedule_PT = driver.find_element(By. CSS_SELECTOR, schedule_PT_selector)
-        schedule_PT.click()
-        print("개인 레슨 탭 선택 완료")
-
-        #개인 레슨 탭 선택 후 딜레이 2초
-        time.sleep(1)        
+        time.sleep(1) 
 
         #19시 스케줄 선택
         wait_count += 1
