@@ -1628,7 +1628,7 @@ def schedule_admin():
         )
         member_search = driver.find_element(By.CSS_SELECTOR, schedule_add_search_selector)
         member_search.clear()
-        member_search.send_keys("이정환")
+        member_search.send_keys("황성민")
         member_search.send_keys(Keys.RETURN)
         print("회원 검색 완료")
 
