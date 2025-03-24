@@ -272,13 +272,13 @@ member_info_check_selector = "body > div.relative.flex.bg-\[--netural-gray-scale
 member_revise_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.flex.flex-col.px-10 > div > div.flex.col-span-2.gap-5.pt-6 > div.flex.flex-col.gap-4 > a > button"
 member_revise_save_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > footer > div > button"
 member_create_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > footer > a > button"
-member_create_select_selector = "body > div.flex.justify-center.items-center.fixed.h-\[100svh\].top-0.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div > div.flex-auto.items-center > div > div:nth-child(1) > a"
+member_create_select_selector = "body > div.flex.justify-center.items-center.fixed.inset-0.z-50.backdrop-filter.placeholder\:outline-none.focus\:outline-none.cursor-auto.duration-300.h-\[100svh\].rounded-md.bg-black\/60.backdrop-blur-sm > div > div > div > div.flex-auto.items-center > div > div:nth-child(1) > a"
 member_datail_name_selector = "#username"
 member_datail_mobile_selector = "#mobileNumber"
 member_dropdown_selector = 'button.inline-flex.justify-between.w-full.bg-transparent'
 member_dropdown_option_xpath = "//button[text()='워크인']"
 item_add_selector = "#member-detail-create > div.flex.flex-col.gap-\[1\.875rem\] > div > div > div > a > button"
-item_add_save_selector = "body > div.flex.justify-end.fixed.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div.flex-auto.overflow-y-auto.pb-\[5\.375rem\] > div > button"
+item_add_save_selector = "body > div.flex.justify-center.items-center.fixed.inset-0.z-50.backdrop-filter.placeholder\:outline-none.focus\:outline-none.cursor-auto.duration-300.h-\[100svh\].bg-black\/60.backdrop-blur-sm > div > div > div > div > main > div > div > button"
 item_tab_PT_selector = "#member-detail-create > div.flex.flex-col.gap-\[1\.875rem\] > ul > li:nth-child(2) > button"
 item_tab_locker_selector = "#member-detail-create > div.flex.flex-col.gap-\[1\.875rem\] > ul > li:nth-child(3) > button"
 item_tab_equipment_selector = "#member-detail-create > div.flex.flex-col.gap-\[1\.875rem\] > ul > li:nth-child(4) > button"
@@ -288,6 +288,8 @@ member_refund_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-whi
 member_refund_history_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.w-full.px-10.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(2) > button"
 member_group_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.w-full.px-10.flex.justify-between.items-center.pt-5.pb-2\.5 > ul > li:nth-child(4) > button"
 member_history_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.w-full.px-10.flex.justify-between.items-center.pt-5.pb-2\.5 > ul > li:nth-child(5) > button"
+pause_history_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div.w-full.px-10.flex.justify-between.items-center.pt-5.pb-2\.5 > ul > li:nth-child(6) > button"
+item_add_confirm_selector = "#member-payment > div.flex.justify-center.items-center.fixed.inset-0.z-50.bg-black\/10.backdrop-filter.placeholder\:outline-none.focus\:outline-none.cursor-auto.duration-300 > div > div > div > div > div.h-\[3\.125rem\].flex.items-center.self-stretch > button:nth-child(3)"
 
 
 def member_admin():
@@ -397,6 +399,16 @@ def member_admin():
         #상품 선택 후 선택 후 딜레이 2초
         time.sleep(1)
 
+        #상품 등록 완료 확인 팝업 _ 닫기 선택
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, item_add_confirm_selector))
+        )
+        item_add_confirm = driver.find_element(By.CSS_SELECTOR, item_add_confirm_selector)
+        item_add_confirm.click()
+        print("닫기 선택 완료")
+        time.sleep(1)
+
         #개인 레슨 탭 선택 호출 대기
         wait_count += 1
         WebDriverWait(driver, 10).until(
@@ -433,6 +445,15 @@ def member_admin():
         #상품 선택 후 선택 후 딜레이 2초
         time.sleep(1)
 
+        #상품 등록 완료 확인 팝업 _ 닫기 선택
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, item_add_confirm_selector))
+        )
+        item_add_confirm = driver.find_element(By.CSS_SELECTOR, item_add_confirm_selector)
+        item_add_confirm.click()
+        print("닫기 선택 완료")
+
         #락커 상품 탭 선택 호출 대기
         wait_count += 1 
         WebDriverWait(driver, 10).until(
@@ -467,6 +488,16 @@ def member_admin():
         print("상품 저장 선택 완료")
 
         #상품 선택 후 선택 후 딜레이 2초
+        time.sleep(1)
+
+        #상품 등록 완료 확인 팝업 _ 닫기 선택
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, item_add_confirm_selector))
+        )
+        item_add_confirm = driver.find_element(By.CSS_SELECTOR, item_add_confirm_selector)
+        item_add_confirm.click()
+        print("닫기 선택 완료")
         time.sleep(1)
 
         #운동 용품 탭 선택 호출 대기 
@@ -505,6 +536,16 @@ def member_admin():
         #상품 선택 후 선택 후 딜레이 2초
         time.sleep(1)
 
+        #상품 등록 완료 확인 팝업 _ 닫기 선택
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, item_add_confirm_selector))
+        )
+        item_add_confirm = driver.find_element(By.CSS_SELECTOR, item_add_confirm_selector)
+        item_add_confirm.click()
+        print("닫기 선택 완료")
+        time.sleep(1)
+
         #회원 등록 버튼 호출 대기
         wait_count += 1
         WebDriverWait(driver, 10).until(
@@ -524,7 +565,7 @@ def member_admin():
         )
         member_secession = driver.find_element(By.CSS_SELECTOR, member_secession_selector)
         member_secession.click()
-        print("탈퇴 처리 탭 선택 완료")
+        print("회원 삭제 탭 선택 완료")
 
         #탈퇴 처리 탭 선택 후 딜레이 2초
         time.sleep(1)
@@ -565,16 +606,28 @@ def member_admin():
         #단체 연장 탭 선택 후 딜레이 2초
         time.sleep(1)
 
-        #연장/정지 기록 탭 호출 대기
+        #정지 기록 탭 호출 대기
         wait_count += 1
         WebDriverWait(driver, 10).until(
             EC.presence_of_all_elements_located((By.CSS_SELECTOR, member_history_selector))
         )
         member_history = driver.find_element(By.CSS_SELECTOR, member_history_selector)
         member_history.click()
-        print("연장/정지 기록 탭 선택 완료")
+        print("정지 기록 탭 선택 완료")
 
-        #연장/정지 기록 탭 선택 후 딜레이 2초
+        #정지 기록 탭 선택 후 딜레이 2초
+        time.sleep(1)
+
+        #수정 기록 탭 호출 대기
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, pause_history_selector))
+        )
+        pause_history = driver.find_element(By.CSS_SELECTOR, pause_history_selector)
+        pause_history.click()
+        print("수정 기록 탭 선택 완료")
+
+        #정지 기록 탭 선택 후 딜레이 2초
         time.sleep(1)
 
         #회원 정보 탭 호출 대기
