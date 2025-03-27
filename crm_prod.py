@@ -852,9 +852,9 @@ time.sleep(1)
 
 #상품 관리 동작
 product_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(5) > li"
-product_app_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(2) > button"
-product_deactivate_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(3) > button"
-product_all_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(1) > button"
+product_app_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.gap-4.border-b.border-\[--netural-gray-scale-100\] > li:nth-child(2) > button"
+product_deactivate_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.gap-4.border-b.border-\[--netural-gray-scale-100\] > li:nth-child(3) > button"
+product_all_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.gap-4.border-b.border-\[--netural-gray-scale-100\] > li:nth-child(1) > button"
 product_pt_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(2) > button"
 product_locker_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(3) > button"
 product_sports_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.w-full.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(4) > button"
@@ -878,7 +878,7 @@ product_add_sportssave_selector = "#wears-create-form-btn"
 product_revise_selector = "(//a[contains(@href, 'product') and contains(@href, 'update')])[1]"
 product_revise_save_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > footer > div > button"
 product_del_selector = "(//a[contains(@href, 'product') and contains(@href, 'delete')])[1]"
-product_del_save_selector = "body > div.flex.justify-center.items-center.fixed.h-\[100svh\].top-0.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div > div > div.h-\[3\.125rem\].grid.grid-cols-2.font-medium > form > button"
+product_del_save_selector = "body > div.flex.justify-center.items-center.fixed.inset-0.z-50.backdrop-filter.placeholder\:outline-none.focus\:outline-none.cursor-auto.duration-300.h-\[100svh\].rounded-md.bg-black\/60.backdrop-blur-sm > div > div > div > div > div.h-\[3\.125rem\].grid.grid-cols-2.font-medium > form > button"
 
 
 # "a[hrf*='product/delete?product'e]"
@@ -1783,8 +1783,8 @@ time.sleep(1)
 
 #그룹 수업 관리 동작
 GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(11) > li"
-GX_reservation_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(2) > button"
-GX_class_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.pt-2.pb-1.gap-5.border-b-4.border-\[--netural-gray-scale-100\] > li:nth-child(1) > button"
+GX_reservation_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.gap-4.border-b.border-\[--netural-gray-scale-100\] > li:nth-child(2) > button"
+GX_class_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.gap-4.border-b.border-\[--netural-gray-scale-100\] > li:nth-child(1) > button"
 GX_class_all_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(3) > button"
 GX_class_deactivate_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(2) > button"
 GX_class_active_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(1) > button"
@@ -1801,7 +1801,7 @@ GX_Class_save_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-whi
 GX_Class_update_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-4.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(1) > svg"
 GX_Class_del_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-4.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(2) > svg"
 GX_Class_copy_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-4.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(3) > svg"
-GX_Class_del_con_selector = "body > div.flex.justify-center.items-center.fixed.h-\[100svh\].top-0.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div > div > div.h-\[3\.125rem\].grid.grid-cols-2.font-medium > form > button"
+GX_Class_del_con_selector = "body > div.flex.justify-center.items-center.fixed.inset-0.z-50.backdrop-filter.placeholder\:outline-none.focus\:outline-none.cursor-auto.duration-300.h-\[100svh\].rounded-md.bg-black\/60.backdrop-blur-sm > div > div > div > div > div.h-\[3\.125rem\].grid.grid-cols-2.font-medium > form > button"
 
 
 def GX_admin():
