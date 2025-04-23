@@ -863,7 +863,11 @@ product_add_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white
 product_add_name_selector = "#productName"
 product_add_drop_selector = "button.inline-flex.justify-between.w-full"
 product_add_dropdown_Xpath = "//button[text()='3개월']"
+product_add_pause_Xpath = "//p[contains(text(), '정지 설정')]/following::button[1]"
+product_add_pausecount_Xpath = "//p[contains(text(), '정지 가능 횟수 제한')]/following::button[1]"
+product_add_pause_count_selector = "#reschedulingAvailableCount"
 product_add_date_selector = "#reschedulingAvailableDate"
+product_add_min_date_Xpath = "//p[contains(text(), '최소 정지 가능일 제한')]/following::button[1]"
 product_add_mindate_selector = "#reschedulingMinDate"
 product_add_money_selector = "#amount"
 product_add_save_selector = "#fc-create-form-btn"
@@ -1032,6 +1036,18 @@ def product_admin():
         #3개월 선택 후 딜레이 2초
         time.sleep(1)
 
+        #정지 설정 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pause_Xpath))
+        )
+        product_add_pause = driver.find_element(By. XPATH, product_add_pause_Xpath)
+        product_add_pause.click()
+        print("정지 설정 ON")
+
+        #토글 ON 후 1초
+        time.sleep(1)
+
         #정지 가능일 입력
         wait_count += 1
         WebDriverWait(driver, 10).until(
@@ -1043,6 +1059,37 @@ def product_admin():
         print("정지 가능일 입력 완료")
 
         #정지 가능일 입력 후 딜레이 2초
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pausecount_Xpath))
+        )
+        product_add_pausecount = driver.find_element(By. XPATH, product_add_pausecount_Xpath)
+        product_add_pausecount.click()
+        print("정지 가능 횟수 제한 ON")
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 입력
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. CSS_SELECTOR, product_add_pause_count_selector))
+        )
+        product_add_pause_count = driver.find_element(By. CSS_SELECTOR, product_add_pause_count_selector)
+        product_add_pause_count.clear()
+        product_add_pause_count.send_keys("10")
+        print("가능 제한 횟수 입력 완료")
+        time.sleep(1)
+
+        #최소 정지 가능일 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_min_date_Xpath))
+        )
+        product_add_min_date = driver.find_element(By. XPATH, product_add_min_date_Xpath)
+        product_add_min_date.click()
+        print("최소 정지 가능일 ON")
         time.sleep(1)
 
         #최소 정지 가능일 입력
@@ -1146,6 +1193,18 @@ def product_admin():
         #이용 횟수 입력 후 딜레이 2초
         time.sleep(1)
 
+        #정지 설정 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pause_Xpath))
+        )
+        product_add_pause = driver.find_element(By. XPATH, product_add_pause_Xpath)
+        product_add_pause.click()
+        print("정지 설정 ON")
+
+        #토글 ON 후 1초
+        time.sleep(1)
+
         #정지 가능일 입력
         wait_count += 1
         WebDriverWait(driver, 10).until(
@@ -1157,6 +1216,37 @@ def product_admin():
         print("정지 가능일 입력 완료")
 
         #정지 가능일 입력 후 딜레이 2초
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pausecount_Xpath))
+        )
+        product_add_pausecount = driver.find_element(By. XPATH, product_add_pausecount_Xpath)
+        product_add_pausecount.click()
+        print("정지 가능 횟수 제한 ON")
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 입력
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. CSS_SELECTOR, product_add_pause_count_selector))
+        )
+        product_add_pause_count = driver.find_element(By. CSS_SELECTOR, product_add_pause_count_selector)
+        product_add_pause_count.clear()
+        product_add_pause_count.send_keys("10")
+        print("가능 제한 횟수 입력 완료")
+        time.sleep(1)
+
+        #최소 정지 가능일 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_min_date_Xpath))
+        )
+        product_add_min_date = driver.find_element(By. XPATH, product_add_min_date_Xpath)
+        product_add_min_date.click()
+        print("최소 정지 가능일 ON")
         time.sleep(1)
 
         #최소 정지 가능일 입력
@@ -1259,6 +1349,18 @@ def product_admin():
         #3개월 선택 후 딜레이 2초
         time.sleep(1)
 
+        #정지 설정 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pause_Xpath))
+        )
+        product_add_pause = driver.find_element(By. XPATH, product_add_pause_Xpath)
+        product_add_pause.click()
+        print("정지 설정 ON")
+
+        #토글 ON 후 1초
+        time.sleep(1)
+
         #정지 가능일 입력
         wait_count += 1
         WebDriverWait(driver, 10).until(
@@ -1270,6 +1372,37 @@ def product_admin():
         print("정지 가능일 입력 완료")
 
         #정지 가능일 입력 후 딜레이 2초
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pausecount_Xpath))
+        )
+        product_add_pausecount = driver.find_element(By. XPATH, product_add_pausecount_Xpath)
+        product_add_pausecount.click()
+        print("정지 가능 횟수 제한 ON")
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 입력
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. CSS_SELECTOR, product_add_pause_count_selector))
+        )
+        product_add_pause_count = driver.find_element(By. CSS_SELECTOR, product_add_pause_count_selector)
+        product_add_pause_count.clear()
+        product_add_pause_count.send_keys("10")
+        print("가능 제한 횟수 입력 완료")
+        time.sleep(1)
+
+        #최소 정지 가능일 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_min_date_Xpath))
+        )
+        product_add_min_date = driver.find_element(By. XPATH, product_add_min_date_Xpath)
+        product_add_min_date.click()
+        print("최소 정지 가능일 ON")
         time.sleep(1)
 
         #최소 정지 가능일 입력
@@ -1372,6 +1505,18 @@ def product_admin():
         #3개월 선택 후 딜레이 2초
         time.sleep(1)
 
+        #정지 설정 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pause_Xpath))
+        )
+        product_add_pause = driver.find_element(By. XPATH, product_add_pause_Xpath)
+        product_add_pause.click()
+        print("정지 설정 ON")
+
+        #토글 ON 후 1초
+        time.sleep(1)
+
         #정지 가능일 입력
         wait_count += 1
         WebDriverWait(driver, 10).until(
@@ -1383,6 +1528,37 @@ def product_admin():
         print("정지 가능일 입력 완료")
 
         #정지 가능일 입력 후 딜레이 2초
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_pausecount_Xpath))
+        )
+        product_add_pausecount = driver.find_element(By. XPATH, product_add_pausecount_Xpath)
+        product_add_pausecount.click()
+        print("정지 가능 횟수 제한 ON")
+        time.sleep(1)
+
+        #정지 가능 횟수 제한 입력
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. CSS_SELECTOR, product_add_pause_count_selector))
+        )
+        product_add_pause_count = driver.find_element(By. CSS_SELECTOR, product_add_pause_count_selector)
+        product_add_pause_count.clear()
+        product_add_pause_count.send_keys("10")
+        print("가능 제한 횟수 입력 완료")
+        time.sleep(1)
+
+        #최소 정지 가능일 ON
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. XPATH, product_add_min_date_Xpath))
+        )
+        product_add_min_date = driver.find_element(By. XPATH, product_add_min_date_Xpath)
+        product_add_min_date.click()
+        print("최소 정지 가능일 ON")
         time.sleep(1)
 
         #최소 정지 가능일 입력
