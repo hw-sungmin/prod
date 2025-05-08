@@ -1816,7 +1816,7 @@ time.sleep(1)
         
 #스케줄 관리 동작
 schedule_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(8) > li"
-schedule_add_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div > div.max-h-\[calc\(100vh-12\.5rem\)\].border.border-\[--netural-gray-scale-100\].rounded-2xl.z-0.rbc-calendar > div > div.rbc-time-content > div:nth-child(2) > div.rbc-events-container"
+schedule_add_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div > div.max-h-\[calc\(100vh-12\.5rem\)\].border.border-\[--netural-gray-scale-100\].rounded-2xl.z-0.rbc-calendar > div > div.rbc-time-content > div:nth-child(2) > div.rbc-events-container"
 schedule_add_member_selector = "#create-schedule-form > div.flex.gap-4.px-5.flex-1 > div > div.p-4.flex.flex-col.gap-4.max-h-\[15\.625rem\].overflow-y-auto.border.border-\[--netural-gray-scale-100\].rounded-2xl > div:nth-child(1)"
 schedule_add_member_product_selector = "#create-schedule-form article:first-of-type button"
 schedule_add_save_selector = "body > div.flex.justify-end.fixed.inset-0.z-50.outline-none.focus\:outline-none.bg-black\/60.cursor-auto.backdrop-filter.backdrop-blur-sm.duration-300 > div > div > div.flex-auto.overflow-y-auto > div > button"
