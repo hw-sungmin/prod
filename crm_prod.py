@@ -1959,8 +1959,8 @@ time.sleep(1)
 
 #그룹 수업 관리 동작
 GX_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > nav > ul > div > div:nth-child(2) > details > a:nth-child(11) > li"
-GX_reservation_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.gap-4.border-b.border-\[--netural-gray-scale-100\] > li:nth-child(2) > button"
-GX_class_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.w-fit.gap-4.border-b.border-\[--netural-gray-scale-100\] > li:nth-child(1) > button"
+GX_reservation_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul > li:nth-child(1) > button > p"
+GX_class_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul > li:nth-child(2) > button > p"
 GX_class_all_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(3) > button"
 GX_class_deactivate_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(2) > button"
 GX_class_active_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul.flex.h-10.p-\[0\.3125rem\].gap-\[0\.875rem\].bg-\[--netural-gray-scale-100\].rounded-lg > li:nth-child(1) > button"
@@ -1968,16 +1968,17 @@ GX_class_add_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-whit
 GX_Class_name_selector = "#className"
 GX_Class_employee_selector = "button.inline-flex.justify-between.w-full.bg-transparent"
 GX_Class_employee_name_Xpath = "//button[text()='황성민']"
-GX_Class_start_day_selector = "#create > div:nth-child(2) > section > div:nth-child(3) > div.w-full.max-w-\[29\.3rem\].grid.grid-cols-2.gap-\[1\.875rem\] > div:nth-child(1) > label"
-GX_Class_start_time_selector = "#create > div:nth-child(2) > section > div:nth-child(4) > div.w-full.max-w-\[27\.5rem\].grid.grid-cols-2.gap-\[1\.875rem\] > div:nth-child(1) > label"
-GX_Class_end_time_selector = "#create > div:nth-child(2) > section > div:nth-child(4) > div.w-full.max-w-\[27\.5rem\].grid.grid-cols-2.gap-\[1\.875rem\] > div:nth-child(2) > label"
+GX_Class_start_day_selector = "#create > div:nth-child(2) > section > div:nth-child(3) > div.flex.w-full.items-center.justify-end > div > div > label:nth-child(1)"
+GX_Class_start_time_selector = "#create > div:nth-child(2) > section > div:nth-child(4) > div.flex.w-full.items-center.justify-end > div > div > label:nth-child(1)"
+GX_Class_end_time_selector = "#create > div:nth-child(2) > section > div:nth-child(4) > div.flex.w-full.items-center.justify-end > div > div > label:nth-child(3)"
 GX_class_maxmember_selector = "#maxMember"
 GX_Class_minmember_selector = "#minMember"
 GX_Class_save_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > footer > button"
-GX_Class_update_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-4.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(1) > svg"
-GX_Class_del_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-4.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(2) > svg"
-GX_Class_copy_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-4.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(3) > svg"
+GX_Class_update_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-2.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(1) > svg"
+GX_Class_del_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-2.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(2) > svg"
+GX_Class_copy_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.grid.grid-cols-1.gap-5.pt-5.pb-\[1\.875rem\].xl\:grid-cols-3.lg\:grid-cols-2 > div:nth-child(1) > div.flex.flex-col.gap-2.pb-4 > div.flex.justify-between.items-center > div > a:nth-child(3) > svg"
 GX_Class_del_con_selector = "body > div.flex.justify-center.items-center.fixed.inset-0.z-50.backdrop-filter.placeholder\:outline-none.focus\:outline-none.cursor-auto.duration-300.h-\[100svh\].rounded-md.bg-black\/60.backdrop-blur-sm > div > div > div > div > div.h-\[3\.125rem\].grid.grid-cols-2.font-medium > form > button"
+GX_Class_todays_selector = "body > div.relative.flex.bg-\[--netural-gray-scale-white\] > div > main > div > div.flex.justify-between.items-center.pt-5.pb-2\.5 > ul > li:nth-child(3) > button > p"
 
 
 def GX_admin():
@@ -1993,18 +1994,6 @@ def GX_admin():
         print("그룹 수업 관리 선택 완료")
         
         #그룹 수업 관리 선택 후 딜레이 2초
-        time.sleep(1)
-
-        #그룹 수업 관리 예약 내역 탭 선택
-        wait_count += 1
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By. CSS_SELECTOR, GX_reservation_selector))
-        )
-        GX_reservation = driver.find_element(By. CSS_SELECTOR, GX_reservation_selector)
-        GX_reservation.click()
-        print("예약 내역 탭 선택 완료")
-
-        #예약 내역 탭 선택 후 딜레이 2초
         time.sleep(1)
 
         #그룹 수업 관리 수업 목록 탭 선택
@@ -2265,6 +2254,30 @@ def GX_admin():
         GX_Class_save.click()
         print("수업 복사 완료")
 
+        time.sleep(1)
+
+        #그룹 수업 관리 오늘의 운동 탭 선택
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. CSS_SELECTOR, GX_Class_todays_selector))
+        )
+        GX_todays = driver.find_element(By. CSS_SELECTOR, GX_Class_todays_selector)
+        GX_todays.click()
+        print("오늘의 운동 탭 선택 완료")
+
+        #예약 내역 탭 선택 후 딜레이 2초
+        time.sleep(1)
+
+        #그룹 수업 관리 예약 내역 탭 선택
+        wait_count += 1
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By. CSS_SELECTOR, GX_reservation_selector))
+        )
+        GX_reservation = driver.find_element(By. CSS_SELECTOR, GX_reservation_selector)
+        GX_reservation.click()
+        print("예약 내역 탭 선택 완료")
+
+        #예약 내역 탭 선택 후 딜레이 2초
         time.sleep(1)
 
     except (NoSuchElementException, TimeoutException):
